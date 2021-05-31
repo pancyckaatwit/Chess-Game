@@ -1,8 +1,13 @@
 package Pieces;
+
+import Board.Move;
+import Board.Board;
+import com.sun.tools.javac.util.List;
+
 /*
  * Generic piece class for all types of pieces to refer to
  */
-public abstract class Piece {
+public abstract class  Piece {
 
 	//NOT DECLARED YET
 	protected final int piecePosition;
@@ -14,6 +19,5 @@ public abstract class Piece {
 	}
 	
 	//Calculates legal moves for a piece
-	public abstract List<Moves> legalMoves(final Board board);
-	
+	public abstract List<Move> legalMoves(final Board board);
 }
