@@ -1,9 +1,9 @@
 package Board;
-
 import Pieces.Piece;
 
 /*
  * Class is responsible for a single tile on the board.
+ * Also on this file is a class for EmptyTile and OccupiedTile
  */
 public abstract class Tile {
 	int tilePosition;
