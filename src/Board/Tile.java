@@ -1,3 +1,6 @@
+package Board;
+
+import Pieces.Piece;
 
 /*
  * Class is responsible for a single tile on the board.
@@ -15,7 +18,7 @@ public abstract class Tile {
 	public abstract Piece getPiece();
 	
 	/*
-	 * Class for an empty tile.
+	 * Class for an empty tile
 	 */
 	public static final class EmptyTile extends Tile {
 		EmptyTile(int position) {
@@ -36,7 +39,7 @@ public abstract class Tile {
 	}
 	
 	/*
-	 * Class for an Occupied Tile
+	 * Class for an Occupied tile
 	 */
 	public static final class OccupiedTile extends Tile {
 		Piece piece;
